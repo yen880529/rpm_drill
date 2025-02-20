@@ -15,7 +15,9 @@ body {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
+    height: auto;
     text-align: center;
+
 }
 
 h1 {
@@ -66,6 +68,7 @@ input:focus {
     align-items: center;
     gap: 15px;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 button {
@@ -92,16 +95,17 @@ button:active {
 
 textarea {
     width: 100%;
-    height: auto; /* 自动高度 */
-    min-height: 150px; /* 设置最小高度 */
-    max-height: 400px; /* 设置最大高度 */
+    height: auto;
+    min-height: 150px;
+    max-height: 400px;
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
     background-color: #f9f9f9;
     box-sizing: border-box;
-    resize: both; /* 允许用户调整大小 */
+    resize: both;
+    margin-top: 15px;
 }
 
 
@@ -133,18 +137,3 @@ select:focus {
     outline: none;
 }
 
-/* 美化選單的箭頭 */
-.input-group {
-    position: relative;
-}
-
-.input-group::after {
-    content: "▼";
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    font-size: 14px;
-    color: #666;
-    pointer-events: none; /* 讓箭頭不影響點擊 */
-}
